@@ -8,15 +8,14 @@ export default function Button({ label }) {
     <>
       <button
         type="button"
-        data-testid="toggle-button"
         className="button-style"
         onClick={() => setVisible(true)}>
         {label}
       </button>
       {!visible ? (
-        <p data-testid="click-me">Click me!</p>
+        <p>Click me!</p>
       ) : (
-        <p data-testid="you-clicked-me">You clicked me!</p>
+        <p>You clicked me!</p>
       )}
     </>
   );
